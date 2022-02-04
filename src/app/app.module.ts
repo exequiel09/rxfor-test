@@ -1,0 +1,15 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { ForModule } from '@rx-angular/template/experimental/for';
+
+import { AppComponent } from './app.component';
+import { HelloComponent } from './hello.component';
+
+@NgModule({
+  imports: [BrowserModule, FormsModule, ForModule],
+  declarations: [AppComponent, HelloComponent],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}

@@ -1,0 +1,8 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<ul>
+  <li *rxFor="let item of test$; trackBy: 'id'">
+    {{ item.name }}
+  </li>
+</ul>
